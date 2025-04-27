@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="title">
+        <h1>Etch-a-Sketch board</h1>
+        <p>Unleash your imagination!</p>
+    </div>
+
+    <div class="controls">
+
+        <div class="options">
+            <input type="radio" id="hoverMode" name="mode">
+            <label for="hoverMode">Hover Mode</label>
+
+            <div class="brushModeOptions">
+                <input type="radio" id="brushMode" name="mode">
+                <label for="brushMode">Brush Mode</label>
+                <label for="colorPick">Choose color:</label>
+                <input type="color" id="colorPick">
+            </div>
+
+            <div class="opacityModeOptions">
+                <input type="radio" id="opacityMode" name="mode">   
+                <label for="opacityMode">Opacity Mode</label>
+                <label for="opacityStrength">Strength:</label>
+                <input type="number" id="opacityStrength" value="50">
+                <label for="opacityStrength">%</label>         
+            </div>
+
+            <input type="radio" id="eraserMode" name="mode">              
+            <label for="eraserMode">Eraser Mode</label>
+        </div>
+
+        <label for="boardSize">Board size:
+            <span id="boardSizeValue"></span>
+        </label>
+        <input type="range" id="boardSize" min="1" max="100" value="16">
+        
+        <button id="reloadButton">Reload Board</button>
+        
+    </div>
+
+    <div class="drawBoard"></div>
+
+</body>
+</html>
