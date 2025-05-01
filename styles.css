@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column; 
+    margin:
+}
+
+button {
+    margin: 5px;
+}
+
+.drawBoard {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: solid rgb(23, 59, 91) 1px;
+    gap: 1px;
+}
+
+.board-row {
+    display: flex;
+    gap: 1px;
+    flex-grow: 1;
+}
+
+.square {
+    background-color: #faebd7;
+    flex-grow: 1;
+}

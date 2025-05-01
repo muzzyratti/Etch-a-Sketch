@@ -16,39 +16,19 @@
 
     <div class="controls">
 
-        <div class="options">
-            <input type="radio" id="hoverMode" name="mode">
-            <label for="hoverMode">Hover Mode</label>
-
-            <div class="brushModeOptions">
-                <input type="radio" id="brushMode" name="mode">
-                <label for="brushMode">Brush Mode</label>
-                <label for="colorPick">Choose color:</label>
-                <input type="color" id="colorPick">
-            </div>
-
-            <div class="opacityModeOptions">
-                <input type="radio" id="opacityMode" name="mode">   
-                <label for="opacityMode">Opacity Mode</label>
-                <label for="opacityStrength">Strength:</label>
-                <input type="number" id="opacityStrength" value="50">
-                <label for="opacityStrength">%</label>         
-            </div>
-
-            <input type="radio" id="eraserMode" name="mode">              
-            <label for="eraserMode">Eraser Mode</label>
-        </div>
-
         <label for="boardSize">Board size:
-            <span id="boardSizeValue"></span>
+            <span id="sizeValue">16 x 16</span>
         </label>
         <input type="range" id="boardSize" min="1" max="100" value="16">
         
-        <button id="reloadButton">Reload Board</button>
-        
+        <button class="reloadButton">Reload</button>
+        <button class="clearButton">Clear</button>
+
     </div>
 
-    <div class="drawBoard"></div>
+    <div class="drawBoard">
+
+    </div>
 
 </body>
 </html>
